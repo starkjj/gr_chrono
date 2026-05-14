@@ -279,3 +279,10 @@ add_subdirectory(src)
 #------------------------------------------------------------
 
 include(CPack)
+
+#------------------------------------------------------------
+# Add user applications directory
+#------------------------------------------------------------
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/apps/CMakeLists.txt")
+    add_subdirectory(apps)
+endif()
