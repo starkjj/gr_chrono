@@ -39,7 +39,7 @@ using namespace chrono::vehicle::generic;
 // =============================================================================
 
 SuspensionTypeWV suspension_type = SuspensionTypeWV::DOUBLE_WISHBONE;
-SteeringTypeWV steering_type = SteeringTypeWV::PITMAN_ARM;
+SteeringTypeWV steering_type = SteeringTypeWV::RACK_PINION;
 BrakeType brake_type = BrakeType::SHAFTS;
 DrivelineTypeWV driveline_type = DrivelineTypeWV::AWD;
 
@@ -134,9 +134,9 @@ int main(int argc, char* argv[]) {
     terrain.Initialize();
 
     // Set the time response for steering and throttle keyboard inputs.
-    double steering_time = 1.0;  // time to go from 0 to +1 (or from 0 to -1)
-    double throttle_time = 1.0;  // time to go from 0 to +1
-    double braking_time = 0.3;   // time to go from 0 to +1
+    double steering_time = 0.0;  // time to go from 0 to +1 (or from 0 to -1)
+    double throttle_time = 0.01;  // time to go from 0 to +1
+    double braking_time = 0.01;   // time to go from 0 to +1
 
     // Create the interactive driver system
     ChInteractiveDriver driver(vehicle);

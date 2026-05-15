@@ -19,7 +19,25 @@ set(GR_SRC main.cpp
         grcorolla/grcorolla.cpp
         grcorolla/grcorolla.h
         grcorolla/GRCorolla_Vehicle.cpp
-        grcorolla/GRCorolla_Vehicle.h)
+        grcorolla/GRCorolla_Vehicle.h
+        grcorolla/GRCorolla_Chassis.cpp
+        grcorolla/GRCorolla_Chassis.h
+        grcorolla/GRCorolla_Wheel.cpp
+        grcorolla/GRCorolla_Wheel.h
+        grcorolla/GRCorolla_TMeasyTire.cpp
+        grcorolla/GRCorolla_TMeasyTire.h
+        grcorolla/GRCorolla_EngineSimpleMap.cpp
+        grcorolla/GRCorolla_EngineSimpleMap.h
+        grcorolla/GRCorolla_AutomaticTransmissionSimple.cpp
+        grcorolla/GRCorolla_AutomaticTransmissionSimple.h
+        grcorolla/GRCorolla_RackPinion.cpp
+        grcorolla/GRCorolla_RackPinion.h
+        grcorolla/GRCorolla_DoubleWishboneReduced.cpp
+        grcorolla/GRCorolla_DoubleWishboneReduced.h
+        grcorolla/GRCorolla_BrakeSimple.cpp
+        grcorolla/GRCorolla_BrakeSimple.h
+        grcorolla/GRCorolla_SimpleDriveline.cpp
+        grcorolla/GRCorolla_SimpleDriveline.h)
 
 add_executable(corollasim ${GR_SRC})
 
