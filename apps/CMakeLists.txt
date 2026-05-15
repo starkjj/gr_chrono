@@ -15,7 +15,11 @@ endif()
 message(STATUS "Adding application: corolla_sim")
 
 # Specify project sources and add executable
-set(GR_SRC corolla_sim/main.cpp)
+set(GR_SRC main.cpp
+        grcorolla/grcorolla.cpp
+        grcorolla/grcorolla.h
+        grcorolla/GRCorolla_Vehicle.cpp
+        grcorolla/GRCorolla_Vehicle.h)
 
 add_executable(corollasim ${GR_SRC})
 
